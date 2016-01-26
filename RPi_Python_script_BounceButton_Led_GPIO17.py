@@ -2,11 +2,11 @@ import RPi.GPIO as GPIO
 import time
 GPIO.setmode(GPIO.BCM)
  
-# Pin 19 will sense for button pushing
+# Pin 11 will sense for button pushing
 button = 11
 GPIO.setup(button, GPIO.IN, pull_up_down=GPIO.PUD_UP)
  
-# The LED
+# The LED GPIO 17
 led = 17
 GPIO.setup(led, GPIO.OUT)
  
